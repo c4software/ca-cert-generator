@@ -4,7 +4,7 @@ Script de génération de CA et de certificats auto-signés « valide ». (Compa
 
 ## Utilisation
 
-- Générer la RootCA (```./generate_ca.sh```)
+- Générer la RootCA (```./generate_ca.sh```) (À ne faire qu’une seul fois)
 - Générer un Certificat (```./generate_cert.sh```)
 - Installer le certificat sur le serveur.
 - « Truster » la CA sur votre machine.
