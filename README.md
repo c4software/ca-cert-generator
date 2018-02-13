@@ -1,4 +1,4 @@
-# ca-cert-generator
+# CA and Certificate generator
 
 Script de génération de CA et de certificats auto-signés « valide ». (Compatible Chrome 58+)
 
@@ -14,7 +14,7 @@ Script de génération de CA et de certificats auto-signés « valide ». (Compa
 Le script de génération de la CA est « generate_ca.sh ». Il est non-interactif pour l’utiliser :
 
 ```sh
-$ ./generate_ca.sh
+./generate_ca.sh
 ```
 
 ## Génération d’un nouveau certificat
@@ -36,7 +36,7 @@ Sur le système :
 ### Archlinux
 
 ```sh
-$ sudo trust anchor ./rootCA/rootCA.crt
+sudo trust anchor ./rootCA/rootCA.crt
 ```
 
 ### Chrome
