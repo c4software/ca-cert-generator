@@ -55,7 +55,7 @@ EOM
 cat <<EOM >generate.sh
 #!/bin/bash
 
-openssl x509 -req -in $DOMAIN.csr -CA ../.$ROOTCA_CRT -CAkey ../.$ROOTCA_KEY -CAcreateserial -out $DOMAIN.crt -days 10000 -extfile $DOMAIN.ext
+openssl x509 -sha256 -req -in $DOMAIN.csr -CA ../.$ROOTCA_CRT -CAkey ../.$ROOTCA_KEY -CAcreateserial -out $DOMAIN.crt -days 10000 -extfile $DOMAIN.ext
 EOM
 chmod +x generate.sh
 
