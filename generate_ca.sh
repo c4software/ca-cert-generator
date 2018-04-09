@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOTCA="./rootCA"
+ROOTCA="./output/rootCA"
 ROOTCA_CRT="$ROOTCA/rootCA.crt"
 ROOTCA_KEY="$ROOTCA/rootCA.key"
 

@@ -6,8 +6,8 @@ if [[ -z "$DOMAIN" ]]; then
   exit 1
 fi
 
-ROOTCA_CRT="./rootCA/rootCA.crt"
-ROOTCA_KEY="./rootCA/rootCA.key"
+ROOTCA_CRT="./output/rootCA/rootCA.crt"
+ROOTCA_KEY="./output/rootCA/rootCA.key"
 if [[ ! -f "$ROOTCA_CRT" ]]; then
   echo "Vous devez générer une CA pour utiliser le script"
   exit 1
@@ -45,9 +45,9 @@ distinguished_name = dn
 C=FR
 ST=France
 L=Angers
-O=Hegyd
-OU=Hegyd
-emailAddress=v.brosseau@hegyd.fr
+O=Brosseau
+OU=Brosseau
+emailAddress=c4software@gmail.com
 CN=$DOMAIN
 EOM
 
