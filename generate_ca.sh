@@ -9,7 +9,7 @@ if [[ -d "$ROOTCA" ]]; then
   exit 1
 fi
 
-mkdir "$ROOTCA"
+mkdir -p "$ROOTCA"
 
 # Génération de la Root Key. (ajouter -des3 pour avoin un mot de passe).
 openssl genrsa -out $ROOTCA_KEY 4096

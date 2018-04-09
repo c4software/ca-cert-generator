@@ -19,8 +19,8 @@ if [[ ! -f "$ROOTCA_KEY" ]]; then
 fi
 
 
-mkdir "$DOMAIN"
-cd "$DOMAIN"
+mkdir -p "./output/$DOMAIN"
+cd "./output/$DOMAIN"
 
 
 # Création du fichier ext pour les alt-names
